@@ -1,0 +1,105 @@
+@charset "utf-8";
+a{
+	text-decoration: none;
+}
+.claim-menu{
+	background-color:#f2f2f2;
+}
+.form-background{
+	background-image: url("../images/x2.png");
+	color:purple;
+}
+
+.input-border{
+	border: groove;
+	height: 30px;
+	width: 350px; 	
+}
+
+.file-submission, .file-submit{
+	border: groove;	
+}
+
+.form-border{
+  background-color: rgba(255,255,255,0.75);
+  font-family: verdana;
+  margin: auto;
+  width: 80%;
+  border: 1px solid grey;
+  padding: 5px;
+  box-shadow:1px 1px 1px 3px grey;
+}
+#size1{
+  margin: auto;
+  width: 45%;
+  border: none;
+  padding: 5px;
+}
+
+.sub-btn{
+	color:#fffff6;
+	background-color:blue;
+	height: 30px;
+    width: 100px;
+	margin: auto;
+}	
+
+.btn-group button {
+  background-color: grey; 
+  border: 1px solid green; 
+  color: white; 
+  padding: 10px 24px;
+  cursor: pointer; 
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  color:black;
+  background-color: #FFD700;
+}
+.agent{
+	background-color:red;
+	color:white;
+	font-size:14;
+	border: 1px solid grey; 
+	height: 30px;
+    width: 150px;   
+	position:absolute;
+    top:100px;
+    right:30px;
+    text-decoration: none;
+	
+	border-bottom-color: coral;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.agent:hover{
+	opacity:60%;
+}
+
+input[type=submit]:disabled
+{
+	text-color:black;
+	background-color:blue;
+	opacity:40%;
+}
+
+input[type=submit]:active
+{
+	background-color:blue;
+}
+
+
+

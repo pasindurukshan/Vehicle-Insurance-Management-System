@@ -1,0 +1,455 @@
+*{
+	margin:0;
+	padding:0;
+}
+ 
+body{
+    background-image: url(../images/register0.jpg);
+	background-repeat:no-repeat;
+	background-size:100% ;
+	background-attachment: fixed;
+}
+
+h1{
+	color:black;
+	margin-top:10px;
+	text-align:center;
+	font-family: 'Ranga' ;font-size: 60px;
+}
+
+
+.formbox{
+	width:100%;
+	background-image: url(../images/bg2.png);
+	background-size: auto 800px;
+	padding-top:1px;
+}
+
+.form{
+	width:65%;
+	margin:auto;
+	background-color: rgba(255,255,255,0.75);
+	border:2px solid black;
+	margin-top:15px;
+}
+
+
+.smallbox1{
+	margin-top:300px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 350px;
+	padding-left:700px;
+	padding-right:700px;
+	padding-bottom: 65px;
+	background-color:white;
+}
+
+.smallbox2{
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+	background-color:white;
+	margin-top:-10px;
+}
+
+
+
+/*input fields fname*/
+.input-container_fname {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 50%;
+  //margin-bottom: 15px;
+  float: left;
+}
+
+
+.input-field_fname {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:40px;
+  font-weight: bold;
+}
+
+.input-field_fname:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields lname*/
+.input-container_lname {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+
+.input-field_lname {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:40px;
+  font-weight: bold;
+}
+
+.input-field_lname:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields user,phone,email*/
+.input-container {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 83%;
+  margin-bottom: 15px;
+}
+
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:30px;
+  font-weight: bold;
+}
+
+.input-field:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields psw*/
+.input-container_psw {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 83%;
+  margin-bottom: 15px;
+}
+
+
+#psw {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:40px;
+  font-weight: bold;
+}
+
+#psw:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields rpsw*/
+.input-container_rpsw {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 83%;
+  margin-bottom: 15px;
+}
+
+
+#rpsw {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:20px;
+  font-weight: bold;
+}
+
+#rpsw:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+
+/*icons*/
+
+.icon_fname {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:40px;
+}
+
+.icon_lname {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:48px;
+  margin-top:40px;
+}
+
+.icon_user {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:30px;
+}
+
+.icon_phone {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:30px;
+} 
+.icon_email {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:30px;
+}
+
+.icon_psw {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:40px;
+}
+
+.icon_rpsw {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:20px;
+}
+
+.radio1{
+  margin-left:170px;
+  margin-top:70px;
+  width: 65%;
+  border: none;
+  font-size:23px;
+}
+
+
+/*input fields make*/
+.input-container_make {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 83%;
+  margin-bottom: 15px;
+}
+
+
+.input-field_make {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:30px;
+  font-weight: bold;
+}
+
+.input-field_make:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields model*/
+.input-container_model {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 50%;
+  //margin-bottom: 15px;
+  float: left;
+}
+
+
+.input-field_model {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:40px;
+  font-weight: bold;
+}
+
+.input-field_model:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields fuel*/
+.input-container_fuel {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+
+.input-field_fuel {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:40px;
+  font-weight: bold;
+}
+
+.input-field_fuel:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields month*/
+.input-container_month {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 50%;
+  //margin-bottom: 15px;
+  float: left;
+}
+
+
+.input-field_month {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:25px;
+  font-weight: bold;
+  margin-bottom:60px;
+}
+
+.input-field_month:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+/*input fields value*/
+.input-container_value {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 50%;
+  //margin-bottom: 15px;
+}
+
+
+.input-field_value {
+  width: 70%;
+  padding: 15px;
+  outline: none;
+  border: 0.5px solid black;
+  margin-top:25px;
+  font-weight: bold;
+  margin-bottom:25px;
+}
+
+.input-field_value:focus  {
+  box-shadow: 0 0 10px 4px dodgerblue;
+}
+
+
+/*icons make, model, fuel, month & value*/
+
+.icon_make {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:30px;
+}
+
+.icon_model {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:40px;
+}
+
+.icon_fuel {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:48px;
+  margin-top:40px;
+}
+
+.icon_month {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:25px;
+  margin-bottom:60px;
+}
+
+.icon_value {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left:170px;
+  margin-top:25px;
+  margin-bottom:25px;
+  font-size:40px;
+}
+
+.filebox{
+	font-size:16px;
+	background-color: dodgerblue;
+	border-radius:15px;
+	box-shadow: 0 10px 8px  dodgerblue;
+	width:310px;
+	padding:15px;
+	border: 2px solid dodgerblue;
+}
+
+.label2{
+	color:blue; 
+	font-size:18px;
+}
+
+/* Set a style for the submit button */
+
+#btn:disabled{
+	background-color:#1e90ff8c;
+	font-size:20px;
+	//font-weight: bold;
+	padding:8px;
+	width: 50%;
+	cursor: pointer;
+	padding: 15px 20px;
+}
+
+#btn{
+	background-color:dodgerblue;
+	font-size:20px;
+	//font-weight: bold;
+	padding:8px;
+	width: 50%;
+	cursor: pointer;
+	padding: 15px 20px;
+}

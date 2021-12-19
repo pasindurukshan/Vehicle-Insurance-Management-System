@@ -1,0 +1,135 @@
+@charset "utf-8";
+*{
+	border: 0;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+   /* text-decoration: none;
+    list-style: none; */
+    box-sizing: border-box;
+}
+body{
+	background-color:#fffff6;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+} 
+
+nav{
+    background: #FFD700;
+    height: 85px;
+    width: 100%;
+	overflow:scroll;
+	position:absolute;
+	overflow:hidden;
+	resize:auto;
+	margin: auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+	margin-right: 40px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 26px 5px;
+    font-weight: bold;
+	text-decoration: none;
+}
+/*Navigation bar; hover line decoration*/
+.menu1:hover:after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: 3px solid;
+    margin: 0 auto;
+	top:0;
+    right:0;
+}
+.menu2:hover:after {
+    content: "";
+    display: block;
+    width: 90px;
+    border-bottom: 3px solid;
+    margin: 0 auto;
+}
+.menu3:hover:after {
+    content: "";
+    display: block;
+    width: 45px;
+    border-bottom: 3px solid;
+    margin: 0 auto;
+}
+li a:hover{
+    color: #ffffcc;
+    transition: .10s;
+}
+
+#login {
+   position:absolute;
+   top:15px;
+   right:30px;
+}
+
+
+
+/*footer css*/
+footer{
+    width: 100%;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box; 
+    text-shadow:5px 5px 5px  #b3b3b3;
+    background-color: #f2f2f2;
+}
+
+.footerbg{
+    background-image: url("../images/footer.png");
+}
+.footer-blocks{
+    float: left;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+.footer-blocks li a{
+     color: black;
+}
+
+footer ul li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-blocks a:hover{
+    color:#b39800;
+    text-shadow: none;
+}
+
+.tabs:hover{
+    color:#b39800;
+    text-shadow: none;
+}
+
+hr.line{
+  border: 1px bold black;
+}
+#follow{
+	top:0;
+    left:0;
+}

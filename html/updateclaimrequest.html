@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Power Assurance </title>
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+<!--This is a hyperlink is for get social media icons which mention in w3school; Reference: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type ="text/css" href="../css/header-footer.css">
+    <link rel="stylesheet" type ="text/css" href="../css/updateclaimrequest.css"> 
+
+    <script src="../js/style.js"></script>
+	
+</head>
+
+
+
+<body onload="myFunction()">
+
+	<nav>
+		
+		<img src="../images/logo3.png" alt="login" width="220px" height="80px" > 
+	<ul>
+		<li class="menu1"><a href="../html/Home page.html">HOME</a></li>
+        <li class="menu2"><a href="../html/Insurance.html"> INSURANCE </a></li>
+        <li class="menu1"><a href="../html/Request claim.html"> CLAIM</a></li>
+        <li class="menu2"><a href="../html/Register_Page.html"> REGISTER </a></li>
+        <li class="menu3"><a href="../html/Help.html"> HELP </a></li>
+        <li class="menu2"><a href="../html/AboutUs.html"> CONTACT US </a></li>	
+		<li><a href="Login.html"><img id="login" src="../images/icon.png" alt="login" width="50px" height="50px" style="float:inline-end;"></a></li>
+		  
+	</ul>
+	</nav>
+
+
+<!--page begin from here-->
+
+<div class="bg">
+
+
+	<h3 style="font-size:15px"><span style="color:grey">Home/Claim/Create new claim request/Display exisiting claim request data/</span>Update existing claim request</h3> </br></br>
+	
+	<div class="btn-group">
+	  <center>
+	  <button ><a href="#Request claim.html" style="color:white">Create a new claim request</a></button>
+	  <button style="background-color:#FFD700; color:black"><a href="updateclaimrequest.html">Update exisiting claim request</a></button>
+	  </center>
+	</div>
+
+	
+	</br></br></br>
+
+	<center><h2>Update claim request</h2></center>
+	
+	<div class="formspace"> </br></br></br>
+	
+	<!--This space to display data in php -->
+	
+	<form action="/updatephpfile.php">
+		<div class="container1">
+		<label for="uname">USERNAME:</label>
+		<input class="input1" type="text" id="uname" name="uname" placeholder="Your Username ..."><br>
+		</div>
+		<div class="container2">
+		<label for="pwd">PASSWORD:</label>
+		<input class="input2" type="text" id="pwd" name="pwd" placeholder="Your Password ..."><br>
+		</div>
+		
+	<div class="radio1" >
+		<h3>Vehicle Type:</h3></br>
+			<input type="radio" id="car" name="vehicle" value="car"/>
+			<label for="Car">Car &nbsp;</label>
+					
+			<input type="radio" id="van" name="vehicle" value="van"/>
+			<label for="Van">Van &nbsp;</label>
+					
+			<input type="radio" id="bus" name="vehicle" value="bus"/>
+			<label for="Three Wheel">Three Wheel &nbsp;</label>
+					
+			<input type="radio" id="bike" name="vehicle" value="bike"/>
+			<label for="bike">Motorcycle &nbsp;</label>
+					
+			<input type="radio" id="threewheel" name="vehicle" value="threewheel"/>
+			<label for="threewheel">Bus </label>
+			<br>
+	</div>				
+		
+
+	<div class="radio1">
+		<h3>Insurance Type:</h3></br>
+			<input type="radio" id="full" name="insurance" value="full"/>
+			<label for="full">Full Insurance</label><br>
+					
+			<input type="radio" id="third" name="insurance" value="third"/>
+			<label for="third">Third party Insurance</label><br>
+					
+			<input type="radio" id="loss" name="insurance" value="loss"/>
+			<label for="loss">Total loss Insurance</label><br>
+					
+			<input type="radio" id="com" name="insurance" value="com"/>
+			<label for="com">Comprehensive Insurance</label><br><br><br><br>
+	</div>		
+
+	<br>
+	
+	<div class="container3">
+		<label for="num">Claim Request Number:<span1> *</span1></label>
+		<input class="input3" type="number" id="num" name="num" placeholder="Enter Claim Request Number"><br>
+	</div>	
+
+	
+	<div class="radio1">
+		<h3>Please Upload Pictorial Evidence:</h3><br>
+		<input type="file" name="file" class="filebox"><br><br>
+		<p style="font-size:17px">(if there is more than one media evidence, submission requested as zip file)</p>
+	</div>	
+	
+	<div class="radio1">
+		<h3>Upload Video Evidence:</h3><br>
+		<input type="file" name="file" class="filebox"><br><br>
+		<p style="font-size:17px">(if there is more than one media evidence, submission requested as zip file)</p>
+	</div>	
+
+	<div class="radio1">
+		<h3>Please Upload Repair Quotation:</h3><br>
+		<input type="file" name="file" class="filebox"><br><br>
+	</div>	
+
+
+
+	</br></br></br>
+	
+	<button class="button"><span>Update Now </span> </a></button>
+	
+    </br></br>
+	
+	</form>	
+	</div>
+	
+
+
+	
+</div>	
+	
+<footer>
+
+
+	<a href="../html/AboutUs.html" style="font-size: 22px; color: black;" class="footer-blocks"><p class="tabs">ABOUT US</p></a>
+	<a href="../html/Feedback.html" style="font-size: 22px; color: black;" class="footer-blocks"><p class="tabs">FEEDBACK</p></a>
+
+	<div class="footer-blocks">
+		<p id="follow" style="color: black; font-size: 22px;"><b> Follow Us </p>
+		<ul>
+			<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="https://lk.linkedin.com/" class="fa fa-linkedin"></a></li>
+		</ul>
+	</div>
+
+	<div class = "footer-blocks">
+		
+		<p style="color: black; font-size: 22px;" for="img1">POWER ASSURANCE PVT.LTD </p>
+		<!--img src="../images/foot.png" width="30px" height="40px" id="img1"--> </br> 
+		
+		<p style="color: black;">Created by Power Assurance</p>
+	</div>
+
+
+
+<div class="footerbg">
+
+</br></br></br></br></br></br></br></br></br>
+
+	<center> <p style=" color: #f2f2f2; text-shadow: none;">©Copyright POWER ASSURANCE 2020. All Rights Reserved</p> </center>
+	
+</br></br></br></br></br></br></br></br></br></br>
+</div></footer> 
+	
+
+</body>
+</html>
+

@@ -1,0 +1,142 @@
+*{
+	margin:0;
+	padding:0;
+}
+ 
+a{
+	text-decoration: none;
+}
+ 
+.bg{
+    background-image: url(../images/bg2.png);
+	//background-repeat:no-repeat;
+	background-size:100%;
+}
+
+span1{
+	color:red;
+}
+.formspace{
+	width:75%;
+	margin:auto;
+	background-color: rgba(255,255,255,0.75);
+	border:2px solid black;
+	margin-top:13px;
+}
+
+.btn-group button{
+  background-color: grey; 
+  border: 1px solid green; 
+  color: white; 
+  padding: 10px 24px;
+  cursor: pointer; 
+}
+
+.btn-group button:hover {
+  color:black;
+  background-color: #FFD700;
+}
+
+label{
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	font-size:25px;
+}
+
+.container1{
+	margin-left:400px;
+}
+
+.container2{
+	margin-left:400px;
+}
+
+.container3{
+	margin-left:220px;
+}
+
+.input1{
+	width: 40%;
+	border: 1px solid black;
+	padding: 8px 0 1px 40px;
+}
+
+.input2{
+	width: 40%;
+	border: 1px solid black;
+	padding: 8px 0 1px 40px;
+	margin-left:4px;
+}
+
+.input3{
+	width: 40%;
+	border: 1px solid black;
+	padding: 8px 0 1px 40px;
+	margin-left:4px;
+}
+
+.radio1{
+  margin-left:220px;
+  margin-top:100px;
+  width: 65%;
+  border: none;
+  font-size:23px;
+}
+
+.filebox{
+	font-size:16px;
+	background-color: none;
+	border-radius:10px;
+	box-shadow: 0 10px 8px  dodgerblue;
+	width:300px;
+	padding:5px 5px 5px 5px;
+	border: 2px solid dodgerblue;
+}
+
+
+/*update button */
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: dodgerblue;
+  border: none;
+  font-weight:bold;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 218px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:1050px;
+  margin-bottom:30px;
+}
+
+span{
+	color:white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

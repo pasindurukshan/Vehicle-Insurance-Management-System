@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Power Assurance </title>
+
+<!--This is a hyperlink is for get social media icons which mention in w3school; Reference: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--This is a form header font mention in w3school; Reference: https://www.w3schools.com/howto/howto_google_fonts.asp -->
+	<link href='https://fonts.googleapis.com/css?family=Ranga' rel='stylesheet'>
+	
+<!--This is for get vehicle model icon metion is w3school; Reference: https://www.w3schools.com/icons/tryit.asp?icon=fas_fa-meteor&unicon=f753 	-->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	
+	<link rel="stylesheet" type ="text/css" href="../css/header-footer.css">
+	<link rel="stylesheet" type ="text/css" href="../css/Register.css">
+
+	<script src="../js/register.js"></script>
+</head>
+
+<body onload="myFunction()">	
+
+	<nav>
+		
+		<img src="../images/logo3.png" alt="login" width="220px" height="80px" > 
+	<ul>
+		<li class="menu1"><a href="../html/Home page.html">HOME</a></li>
+        <li class="menu2"><a href="../html/Insurance.html"> INSURANCE </a></li>
+        <li class="menu1"><a href="../html/Request claim.html"> CLAIM</a></li>
+        <li class="menu2"><a href="../html/Register_Page.html"> REGISTER </a></li>
+        <li class="menu3"><a href="../html/Help.html"> HELP </a></li>
+        <li class="menu2"><a href="../html/AboutUs.html"> CONTACT US </a></li>	
+		<li><a href="Login.html"><img id="login" src="../images/icon.png" alt="login" width="50px" height="50px" style="float:inline-end;"></a></li>
+		  
+	</ul>
+	</nav>
+
+</br></br></br></br></br>
+
+<!--End of header--->	
+
+
+
+	<div class="smallbox1">  </div>
+
+	<div class="smallbox2">  <h1>Register with us</h1>  </div>
+
+
+	<div class="formbox">
+	
+		<div class="form">
+		
+			
+			<form  method="post" onsubmit="return checkpasswords()" action="../php/register submit.php">
+				
+				<br><br><br><br>
+				
+				<div class="input-container_fname">
+				<i class="fa fa-user icon_fname"></i>
+				<input class="input-field_fname" type="text" placeholder="First Name" name="field1" required>
+				</div>
+				
+				<div class="input-container_lname">
+				<i class="fa fa-user icon_lname"></i>
+				<input class="input-field_lname" type="text" placeholder="Last Name" name="field2" required>
+				</div>				
+				
+				<div class="input-container">
+				<i class="fa fa-user-circle icon_user"></i>
+				<input class="input-field" type="text" placeholder="Username" name="usrnm" required>
+				</div>
+
+				<div class="input-container">
+				<i class="fa fa-phone icon_phone"></i>
+				<input class="input-field" type="text" placeholder="Phone Number" name="phone" required>
+				</div>
+				
+				<div class="input-container">
+				<i class="fa fa-envelope icon_email"></i>
+				<input class="input-field" type="text" placeholder="Email" name="email" pattern="[a-zA-Z0-9.%+-]+@[a-z0-9]+\.[a-z]{2,3}" required>
+				</div>
+
+				<div class="input-container_psw">
+				<i class="fa fa-key icon_psw"></i>
+				<input id="psw" type="password" placeholder="Password" name="psw" required>
+				</div>
+
+				<div class="input-container_rpsw">
+				<i class="fa fa-key icon_rpsw"></i>
+				<input id="rpsw" type="password" placeholder="Confirm Password" name="rpsw" required>
+				</div>
+				<br><br><br>
+
+				<div class="radio1" >
+					<h3>Vehicle Type:</h3></br>
+						<input type="radio" id="car" name="field4" value="Car"/>
+						<label for="Car">Car &emsp;</label>
+								
+						<input type="radio" id="van" name="field4" value="Van"/>
+						<label for="Van">Van &emsp;</label>
+								
+						<input type="radio" id="bus" name="field4" value="Bus"/>
+						<label for="Three Wheel">Three Wheel &emsp;</label>
+								
+						<input type="radio" id="bike" name="field4" value="Bike"/>
+						<label for="bike">Motorcycle &emsp;</label>
+								
+						<input type="radio" id="threewheel" name="field4" value="Threewheel"/>
+						<label for="threewheel">Bus &emsp;</label>
+						<br>
+				</div>		
+
+				<div class="input-container_make">
+				<i class="fa fa-car icon_make"></i>
+				<input class="input-field_make" type="text" placeholder="Brand" name="make" required>
+				</div>
+				
+				<div class="input-container_model">
+				<i class="fa fa-icicles icon_model"></i>
+				<input class="input-field_model" type="text" placeholder="Model" name="model" required>
+				</div>	
+				
+				<div class="input-container_fuel">
+				<i class="fa fa-meteor icon_fuel"></i>
+				<select class="input-field_fuel" name="fuelx" form="fuelform">
+				<option value="petrol">PETROL</option>
+				<option value="diesel">DIESEL</option>
+				<option value="electric">ELECTRIC</option>
+				<option value="hybrid">HYBRRID</option>
+				</select>
+				</div>	
+				
+				<div class="radio1">
+				<h3>Year of Manufacture:</h3>
+				</div>
+				<div class="input-container_month">
+				<i class="fa fa-calendar-alt icon_month"></i>
+				<input class="input-field_month" type="month" placeholder="Model" name="date" required>
+				</div>		
+
+				<br><br><br><br><br><br><br><br>
+
+				<div class="radio1">
+					<h3>Insurance Type:</h3></br>
+						<input type="radio" id="full" name="insurance" value="Full"/>
+						<label for="full">Full Insurance</label><br><br>
+								
+						<input type="radio" id="third" name="insurance" value="Third Party"/>
+						<label for="third">Third party Insurance</label><br><br>
+								
+						<input type="radio" id="loss" name="insurance" value="Total Loss"/>
+						<label for="loss">Total loss Insurance</label><br><br>
+								
+						<input type="radio" id="com" name="insurance" value="Comprehensive"/>
+						<label for="com">Comprehensive Insurance</label><br>
+				</div>		
+
+
+				<div class="radio1">
+				<h3>Estimated value of the vehicle:</h3>
+				</div>
+				<div class="input-container_value">
+				<i class="fas fa-money-check-alt icon_value"></i>
+				<input class="input-field_value" type="number" placeholder="LKR ..... ..... ..... ....." name="cash" min="10000">
+				</div>	
+				
+				
+				<div class="radio1">
+				<h3>Please Upload Vehicle Valuation Report:</h3><br>
+				<input type="file" name="file" class="filebox"><br><br>
+				<p style="font-size:17px">(if the file is more than 10mb, please upload as a zip file)</p>
+				</div>				
+				
+				<br><br><br><br><br><br><br>
+				
+				<center>
+				<input type="checkbox" id="policy" name="policy" onclick="enablebutton()">
+				<label class="label2">I accept terms of use and privacy policy</label>	
+				<br><br>	
+				</center>
+				
+				<br><br>
+				
+				<center>
+				<input type="submit" id="btn" name="btn" value="Register Now" disabled >				
+				</center>
+					
+				<br><br><br><br>
+				
+			</form>
+			
+			
+			<br><br>	
+		</div>
+	</div>		
+	<br>	
+
+	
+	
+	
+	
+	<!--footer-->
+
+<footer>
+
+
+	<a href="../html/AboutUs.html" style="font-size: 22px; color: black;" class="footer-blocks"><p class="tabs">ABOUT US</p></a>
+	<a href="../html/Feedback.html" style="font-size: 22px; color: black;" class="footer-blocks"><p class="tabs">FEEDBACK</p></a>
+
+	<div class="footer-blocks">
+		<p id="follow" style="color: black; font-size: 22px;"><b> Follow Us </p>
+		<ul>
+			<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="https://lk.linkedin.com/" class="fa fa-linkedin"></a></li>
+		</ul>
+	</div>
+
+	<div class = "footer-blocks">
+		
+		<p style="color: black; font-size: 22px;" for="img1">POWER ASSURANCE PVT.LTD </p>
+		<!--img src="../images/foot.png" width="30px" height="40px" id="img1"--> </br> 
+		
+		<p style="color: black;">Created by Power Assurance</p>
+	</div>
+
+
+
+<div class="footerbg">
+
+</br></br></br></br></br></br></br></br></br>
+
+	<center> <p style=" color: #f2f2f2; text-shadow: none;">©Copyright POWER ASSURANCE 2020. All Rights Reserved</p> </center>
+	
+</br></br></br></br></br></br></br></br></br></br>
+</div></footer> 
+</body>
+</html>
+
